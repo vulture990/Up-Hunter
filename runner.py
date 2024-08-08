@@ -36,11 +36,11 @@ print("Leave blank to run the script every hour")
 
 
 # if user leave it blank assgin 1 to hours
-hours = int(input("Hours: ") or 0)
+hours = 0 
 
 # if user leave it blank assgin 0 to minutes and seconds
-minutes = int(input("Minutes: ") or 1)
-seconds = int(input("Seconds: ") or 0)
+minutes = 1
+seconds = 0
 
 # initialize the scheduler
 scheduler = BlockingScheduler(timezone="asia/kolkata")
